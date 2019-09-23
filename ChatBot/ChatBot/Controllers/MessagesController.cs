@@ -18,7 +18,7 @@ namespace ChatBot
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.DialogoNota());
+                await Conversation.SendAsync(activity, () => new Dialogs.Dialogo());
             }
             else
             {
